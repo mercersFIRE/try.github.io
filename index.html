@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>2064's Portfolio</title>
+</head>
+<body>
+     <!-----start Hearder section----->
+     <div id="hearder">
+        <div class="contenier">
+            <nav >
+
+                <div class="im"><img src="img/logo.png" alt="logo" class="logo"></div>
+                <ul id="sidmenu">
+                    <li><a href="#hearder">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                 </ul>
+              </nav> 
+              <div class="hearder-text">
+                <p>Web Designer</p>
+                <h1>Hi I am <span>Md Imranur Rahman Akib</span> <br> From IIT,JU</h1>
+              </div>       
+            </div>
+        </div>
+     </div>
+      <!-----End Hearder section----->
+
+
+      <!-----start About section----->
+      <div id="about">
+        <div class="contenier">
+            <div class="row">
+                <div class="about-col-1">
+                  <img src="img/team1.jpg" >  
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><br><br><br>I'm currently a university student completing BSc in ICT at IIT, Jahanginagar University.<br><br><br>Name : Md Imranur Rahman Akib<br><br>Address : 26 Lalbag road, Dhaka<br><br>Email : imranurrahman16@gmail.com<br><br>
+                    Phone : 01309084210<br><br><br> </p>
+                   <div class="tab-titles">
+                    <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br> Web site(front end)<br></li>
+                        <li><span><br>Language</span><br>Intermediate level at C++<br>Intermediate level in HTML<br>Beginer in CSS<br> </li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Current </span><br>Finished Designing this Project <br></li>
+                        <li><span><br>2020 - 2022</span><br> Created a Snake Game<br></li>
+                        <li><span><br>Project Development</span><br> Created a Movie Ticket Management System<br></li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bsc in Information Technology</span><br>2019-Present<br>Institute of Information Technology<br>Jahangirnagar University</li>
+                        <li><span><br>HSC</span><br> 2019<br>Science<br>Cantonment Public School and College<br>Result : GPA 5.0</li>
+                        <li><span><br>SSC</span><br> 2017<br>Science<br>Rangpur Zilla School<br>Result : GPA 5.0</li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-----End About section----->
+
+
+
+
+      <!-----Service section Start----->
+     <div id="services">
+        <div class="contenier">
+            <h1 class="sub-title">Experiences</h1>
+            <div class="services-list">
+                <div>
+                    <img src="img/flag.png" >
+                    <h2>Web Design</h2>
+                </div>
+                <div>
+                    <img src="img/pancel.png" >
+                    <h2>Ul/UX Design</h2>
+                </div>
+                <div>
+                    <img src="img/grars.png" >
+                    <h2>C++ projects</h2>
+                </div>
+
+            </div>
+
+        </div>
+     </div>
+         <!----services section end ----->
+
+        <!----Contact section Start ----->
+          <div id="contact">
+            <div class="contenier">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>imranurrahman16@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone-flip"></i>01309084210</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+          </div>
+   
+          <!----Contact section End ----->
+  
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+      </script>
+</body>
+</html>
